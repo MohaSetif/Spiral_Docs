@@ -1,9 +1,10 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { useEffect } from "react"
 import '../assets/css/card.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface CardProps{
-    icon: string | IconDefinition;
+    icon: IconProp | string;
     title: string;
     content: string;
   };
@@ -27,7 +28,11 @@ export default function Card (props: CardProps) {
     <div className="card">
         <div className="card-content">
         <div className="card-image">
-            <i className={props.icon}></i>
+            {typeof props.icon === 'string' ? (
+                <img src={props.icon} className="Icon" />
+            ) : (
+                <FontAwesomeIcon icon={props.icon as IconProp} className="fw_icon" />
+            )}
         </div>
         <div className="card-info-wrapper">
             <div className="card-info">
