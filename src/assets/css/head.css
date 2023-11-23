@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(15, 13, 22);
+}
+
+.Body_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+.Body_page h1, .Body_page h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+}
+
+.Body_page h1{
+    font-size: var(--main);
+    font-weight: bolder;
+    line-height: 75px;
+}
+
+.Body_page h4{
+    font-size: var(--sub_main);
+}
+
+.Head{
+    z-index: 2;
+    margin-top: 10%;
+    width: 75%;
+}
+
+.circle{
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 34vmax;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(100, 143, 235), rgb(74, 19, 163));
+    animation: rotate 4s infinite linear;
+    filter: blur(20px);
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(20vmax);
+  }
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1 1.5);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+}
+
+
+/*===============Copy to Clipboard================*/
+
+.container {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.copy-text {
+	position: relative;
+	padding: 5px;
+	background: rgb(15, 13, 22);
+	border: 0.5px solid transparent;
+    background: linear-gradient(45deg,rgb(125, 77, 202),rgb(3, 3, 110)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, inear-gradient(#fff 0 0);
+	border-radius: 20px;
+	display: flex;
+}
+
+.copy-text input{
+    background-color: rgb(15, 13, 22);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.copy-text input.text {
+	padding: 10px;
+	font-size: 18px;
+	color: #cfcfcf;
+	border: none;
+	outline: none;
+}
+
+.copy-text button {
+	padding: 10px;
+	background: #7957f5;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	outline: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+	cursor: pointer;
+}
+
+.copy-text button:active {
+	background: #7957f5;
+}
+
+.copy-text button:before {
+	content: "Copied";
+	position: absolute;
+	top: -45px;
+	right: 0px;
+	background: #7957f5;
+	padding: 8px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	display: none;
+}
+
+.copy-text button:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 25px;
+	width: 10px;
+	height: 10px;
+	background: #7957f5;
+	transform: rotate(45deg);
+	display: none;
+}
+
+.copy-text.active button:before,
+.copy-text.active button:after {
+	display: block;
+}

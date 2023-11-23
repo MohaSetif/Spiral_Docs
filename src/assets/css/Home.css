@@ -1,0 +1,126 @@
+.Home{
+    margin: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+}
+
+.left_content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    width: 50%;
+}
+
+.right_content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.solar_system {
+    position: absolute;
+    justify-content: right;
+  }
+
+  .sun{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(52, 86, 131);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  .first_planet{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(52, 86, 131);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    animation: orbit 14s linear infinite;
+  }
+
+  .second_planet{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(52, 86, 131);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    animation: orbit2 8s linear infinite;
+  }
+
+  .third_planet{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(52, 86, 131);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    animation: orbit3 2s linear infinite;
+  }
+
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg) translateX(270px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(270px) rotate(-360deg);
+    }
+  }
+
+  @keyframes orbit2 {
+    from {
+      transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+  }
+
+  @keyframes orbit3 {
+    from {
+      transform: rotate(0deg) translateX(70px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    }
+  }
+
+  .first_planet-outline, .second_planet-outline, .third_planet-outline{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgb(52, 86, 131);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  .first_planet-outline{
+    height: 140px;
+    width: 140px;
+  }
+
+  .second_planet-outline{
+    height: 300px;
+    width: 300px;
+  }
+
+  .third_planet-outline{
+    height: 540px;
+    width: 540px;
+  }
