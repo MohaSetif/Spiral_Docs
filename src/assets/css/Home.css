@@ -1,5 +1,7 @@
 .Home{
-    margin: 20%;
+    margin: 10%;
+    margin-right: 20%;
+    margin-top: 20%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -12,6 +14,15 @@
     margin-right: 20px;
     text-align: left;
     width: 50%;
+}
+
+.left_content h2{
+    font-size: var(--header);
+    font-weight: bold;
+}
+
+.left_content h3{
+    font-size: var(--content);
 }
 
 .right_content {
@@ -30,20 +41,12 @@
 .react_icon{
     width: 45px;
     height: auto;
-    z-index: 3;
 }
 
 .vue_icon{
     margin-top: 5px;
     width: 35px;
     height: auto;
-    z-index: 3;
-}
-
-.svelte_icon{
-    width: 45px;
-    height: auto;
-    z-index: 3;
 }
 
 .solar_system {
@@ -77,6 +80,7 @@
     left: 50%;
     translate: -50% -50%;
     animation: orbit 14s linear infinite;
+    z-index: 4;
   }
 
   .second_planet{
@@ -93,6 +97,7 @@
     left: 50%;
     translate: -50% -50%;
     animation: orbit2 8s linear infinite;
+    z-index: 4;
   }
 
   .third_planet{
@@ -109,6 +114,12 @@
     left: 50%;
     translate: -50% -50%;
     animation: orbit3 2s linear infinite;
+    z-index: 4;
+  }
+
+  .third_planet img{
+    width: 60%;
+    height: auto;
   }
 
   @keyframes orbit {
@@ -141,11 +152,11 @@
   .first_planet-outline, .second_planet-outline, .third_planet-outline{
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgb(52, 86, 131);
+    border: 1px solid rgb(51, 47, 83);
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    z-index: 2;
+    z-index: 1;
   }
 
   .first_planet-outline{

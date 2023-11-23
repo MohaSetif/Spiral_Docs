@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaravel, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
+import faSvelte from '../assets/images/pngaaa.com-4915832-removebg-preview.png'
 import '../assets/css/Home.css'
 
 export default function Body() {
@@ -7,7 +8,7 @@ export default function Body() {
     <div className="Home">
         <div className="left_content">
           <h2>One Backend, Many Frontends</h2>
-          <h3>You're a Javascript fan? No problem, Build robust, full-stack applications in PHP using Laravel and Livewire. Love JavaScript? Build a monolithic React, Vue or Svelte driven frontend by pairing Laravel with Inertia or Typescript.</h3>
+          <h3>You're a Javascript fan? No problem, Build robust applications in PHP using Laravel as a backend. As a frontend, use React, Vue or even Svelte by pairing Laravel with Inertia or Typescript.</h3>
         </div>
         <div className="right_content">
           <div className="solar_system">
@@ -21,7 +22,7 @@ export default function Body() {
             </div>
         
             <div className="third_planet-outline">
-              <div className="third_planet"></div>
+              <div className="third_planet"><img src={faSvelte} /></div>
             </div>
           </div>
         </div>
