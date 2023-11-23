@@ -1,5 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { useEffect } from "react"
+import '../assets/css/card.css'
 
 interface CardProps{
     icon: string | IconDefinition;
@@ -30,7 +31,6 @@ export default function Card (props: CardProps) {
         </div>
         <div className="card-info-wrapper">
             <div className="card-info">
-            <i className="fa-duotone fa-apartment"></i>
             <div className="card-info-title">
                 <h3>{props.title}</h3>  
                 <h4>{props.content}</h4>

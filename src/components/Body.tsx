@@ -1,15 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaravel, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import faSvelte from '../assets/images/pngaaa.com-4915832-removebg-preview.png'
+import Tailwind from '../assets/images/image-invert.png'
+import Postgres from '../assets/images/imgbin-computer-icons-postgresql-database-others-SKZhuzreHG59SpDwpJV6M0Yz6-removebg-preview.png'
 import '../assets/css/Home.css'
 import Card from './Card';
 
 export default function Body() {
   const cardsData = [
-    { icon: faLaravel, title: 'Laravel', content: 'Laravel backend' },
-    { icon: faReact, title: 'React', content: 'React frontend' },
-    { icon: faVuejs, title: 'Vue.js', content: 'Vue.js frontend' },
-    { icon: faSvelte, title: 'Svelte', content: 'Svelte frontend' }
+    { icon: faLaravel, title: 'Laravel', content: 'PHP framework for swift web development.' },
+    { icon: faReact, title: 'React', content: 'avaScript library for dynamic interfaces.' },
+    { icon: faVuejs, title: 'Vue.js', content: 'Versatile JavaScript framework for UIs.' },
+    { icon: faSvelte, title: 'Svelte/Sveltekit', content: 'Modern JS framework with efficient output.' },
+    { icon: Tailwind, title: 'Tailwind', content: 'Utility-based rapid CSS framework.' },
+    { icon: Postgres, title: 'PostgreSQL', content: 'Robust open-source database system.' },
   ];
   return (
     <>

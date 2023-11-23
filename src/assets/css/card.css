@@ -1,25 +1,16 @@
 :root {
-    --bg-color: rgb(20, 20, 20);
-    --card-color: rgb(23, 23, 23);
+    --card-color: rgb(22, 19, 29);
   }
   
-  /* body {
-    align-items: center;
-    background-color: var(--bg-color);
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    margin: 0px;
-    overflow: hidden;
-    padding: 0px;
-  }
-   */
   #cards {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;  
     max-width: 916px;
     width: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
   }
   
   #cards:hover > .card::after {
@@ -27,7 +18,7 @@
   }
   
   .card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(233, 223, 255, 0.164);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -57,7 +48,7 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06),
+      rgba(154, 145, 196, 0.06),
       transparent 40%
     );
     z-index: 3;
@@ -84,11 +75,8 @@
     z-index: 2;
   }
   
-  /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
-  
-  h1, h2, h3, h4, span {
+  h1, h2, h3, h4 {
     color: rgb(240, 240, 240);
-    font-family: "Rubik", sans-serif;
     font-weight: 400;
     margin: 0px;
   }
@@ -106,7 +94,7 @@
   }
   
   .card-image > i {
-    font-size: 6em;
+    font-size: 8em;
     opacity: 0.25;
   }
   
@@ -136,12 +124,10 @@
   }
   
   .card-info-title > h4 {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(251, 247, 253, 0.5);
     font-size: 0.85em;
     margin-top: 8px;
   }
-  
-  /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
   
   @media(max-width: 1000px) {
     body {
