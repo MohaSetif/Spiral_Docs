@@ -12,7 +12,7 @@ export default function Body() {
     { icon: faReact, title: 'React', content: 'avaScript library for dynamic interfaces.' },
     { icon: faVuejs, title: 'Vue.js', content: 'Versatile JavaScript framework for UIs.' },
     { icon: faSvelte, title: 'Svelte/Sveltekit', content: 'Modern JS framework with efficient output.' },
-    { icon: Tailwind, title: 'Tailwind', content: 'Utility-based rapid CSS framework.' },
+    { icon: Tailwind, title: 'Tailwind', content: 'Utility-based rapid CSS framework packed with classes.' },
     { icon: Postgres, title: 'PostgreSQL', content: 'Robust open-source database system.' },
   ];
   return (
