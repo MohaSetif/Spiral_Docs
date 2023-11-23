@@ -16,6 +16,12 @@
     width: 50%;
 }
 
+.frontends{
+    background: -webkit-linear-gradient(#b2edf5, #2b0d72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .left_content h2{
     font-size: var(--header);
     font-weight: bold;

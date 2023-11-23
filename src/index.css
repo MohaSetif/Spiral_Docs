@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: DM;
+    src: url(./assets/fonts/DM_Sans/DMSans-VariableFont.ttf);
+}
+
+*{
+    font-family: DM;
+}
 
 :root{
     --main: clamp(4.5rem, 2.5vw, 2.8rem);

@@ -7,7 +7,7 @@ export default function Body() {
   return (
     <div className="Home">
         <div className="left_content">
-          <h2>One Backend, Many Frontends</h2>
+          <h2>One Backend, Many <span className='frontends'>Frontends</span></h2>
           <h3>You're a Javascript fan? No problem, Build robust applications in PHP using Laravel as a backend. As a frontend, use React, Vue or even Svelte by pairing Laravel with Inertia or Typescript.</h3>
         </div>
         <div className="right_content">

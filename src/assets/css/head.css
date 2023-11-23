@@ -30,8 +30,10 @@ body{
 
 .Head{
     z-index: 2;
-    margin-top: 10%;
-    width: 75%;
+    margin-top: 12%;
+    margin-bottom: 50px;
+    width: 81.3%;
+    height: auto;
 }
 
 .circle{
@@ -53,7 +55,7 @@ body{
     width: 100%;
     position: absolute;
     z-index: 2;
-    backdrop-filter: blur(20vmax);
+    backdrop-filter: blur(10vmax);
   }
 
 @keyframes rotate {
