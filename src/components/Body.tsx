@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaravel, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import '../assets/css/Home.css'
 
 export default function Body() {
@@ -9,13 +11,13 @@ export default function Body() {
         </div>
         <div className="right_content">
           <div className="solar_system">
-            <div className="sun"></div>
+            <div className="sun"><FontAwesomeIcon className='laravel_icon' icon={faLaravel} /></div>
             <div className="first_planet-outline">
-              <div className="first_planet"></div>
+              <div className="first_planet"><FontAwesomeIcon className='react_icon' icon={faReact} /></div>
             </div>
         
             <div className="second_planet-outline">
-              <div className="second_planet"></div>
+              <div className="second_planet"><FontAwesomeIcon className='vue_icon' icon={faVuejs} /></div>
             </div>
         
             <div className="third_planet-outline">
