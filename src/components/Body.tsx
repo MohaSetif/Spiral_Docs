@@ -9,7 +9,7 @@ import Card from './Card';
 export default function Body() {
   const cardsData = [
     { icon: faLaravel, title: 'Laravel', content: 'PHP framework for swift web development.' },
-    { icon: faReact, title: 'React', content: 'avaScript library for dynamic interfaces.' },
+    { icon: faReact, title: 'React', content: 'JavaScript library for dynamic interfaces.' },
     { icon: faVuejs, title: 'Vue.js', content: 'Versatile JavaScript framework for UIs.' },
     { icon: faSvelte, title: 'Svelte/Sveltekit', content: 'Modern JS frameworks with efficient output.' },
     { icon: Tailwind, title: 'Tailwind', content: 'Utility-based rapid CSS framework packed with classes.' },
