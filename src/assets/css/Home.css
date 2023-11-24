@@ -181,12 +181,17 @@
     width: 540px;
   }
 
+  @media (max-width: 768px) {
+    .right_content{
+      overflow-x: hidden;
+    }
+  }
+
 
   /* =====================Configs==================== */
 
   .code_block{
     border-radius: 20px;
-    margin-right: 50px;
     width: 100%;
     height: auto;
     font-size: var(--script);
@@ -196,36 +201,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 100px;
-  }
-  
-  .code-block-container {
-    flex: 1;
-    margin: 50px;
+    margin: 5%;
+    margin-top: 20%
   }
   
   .explanation {
     flex: 1;
     padding-left: 20px;
   }
-
-  .conf_exp h2{
-    font-size: var(--header);
-    font-weight: bold;
-  }
-
-  .conf_exp h3{
-    font-size: var(--content);
-  }
   
   @media (max-width: 768px) {
     .configs {
       flex-direction: column;
       align-items: stretch;
-    }
-  
-    .explanation {
-      padding-left: 0;
     }
   }
   

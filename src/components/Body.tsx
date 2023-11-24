@@ -43,12 +43,12 @@ export default function Body() {
         </div>
       </div>
       <div className="configs">
-        <div className="code-block-container">
+        <div className="right_content">
           <SyntaxHighlighter className="code_block" language="php" style={atelierCaveDark}>
             {database}
           </SyntaxHighlighter>
         </div>
-        <div className="conf_exp">
+        <div className="left_content">
           <h2>Database</h2>
           <h3>Laravel seamlessly integrates with PostgreSQL by configuring the .env file with the PostgreSQL connection details like DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD. Leveraging Laravel's migration system and eloquent ORM simplifies database setup and management, enabling smooth interaction between the application and PostgreSQL.</h3>
         </div>
