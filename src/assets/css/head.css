@@ -77,7 +77,7 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    width: 400px;
+    width: 40%;
 }
 
 .copy-text {
@@ -99,7 +99,6 @@ body{
 
 .copy-text input.text {
 	padding: 10px;
-	font-size: 18px;
 	color: #cfcfcf;
 	border: none;
 	outline: none;
@@ -149,4 +148,18 @@ body{
 .copy-text.active button:before,
 .copy-text.active button:after {
 	display: block;
+}
+
+@media (max-width: 768px) {
+    .Head{
+        margin-top: 20%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .Body_page h1{
+        font-size: 60px;
+    }
 }

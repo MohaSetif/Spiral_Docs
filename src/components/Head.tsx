@@ -44,7 +44,7 @@ function Head() {
         <br />
         <div className="container">
           <div className="copy-text">
-            <input type="text" className="text" value="npx @mohasetif/create-spiral-app" />
+            <input type="text" className="text text-base" value="npx @mohasetif/create-spiral-app" />
             <button><FontAwesomeIcon icon={faCopy} /></button>
         </div>
       </div>
