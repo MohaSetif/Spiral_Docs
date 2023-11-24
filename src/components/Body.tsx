@@ -54,10 +54,13 @@ export default function Body() {
         </div>
       </div>
       <div className="cmd">
-        <div className="cmd_left">
-
+        <div className="left_content">
+          <h2>Setting up starter kits</h2>
+          <h3>
+            Remember that they're not all-inclusive templates, you need to install packages for your projects, however, the purpose of this Spiral stack lies on Production Efficiency.
+          </h3>
         </div>
-        <div className="cmd_right">
+        <div className="right_content">
           <div className="console">
             <header>
               <p>owner@randomuser23</p>

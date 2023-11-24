@@ -230,6 +230,13 @@
   
 /* =================Console==================== */
 
+.cmd{
+  margin: 5%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+
 .console {
   font-family: 'Fira Mono';
   width: 700px;
