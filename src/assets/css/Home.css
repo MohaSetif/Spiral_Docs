@@ -184,9 +184,9 @@
   @media (max-width: 768px) {
     .solar_system {
       position: absolute;
-      transform: scale(0.45);
-      max-width: 45%;
-      max-height: 45%;
+      transform: scale(0.4);
+      max-width: 40%;
+      max-height: 40%;
     }
   }
 
