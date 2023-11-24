@@ -182,11 +182,13 @@
   }
 
   @media (max-width: 768px) {
-    .right_content{
-      overflow-x: hidden;
+    .solar_system {
+      position: absolute;
+      transform: scale(0.45);
+      max-width: 45%;
+      max-height: 45%;
     }
   }
-
 
   /* =====================Configs==================== */
 
