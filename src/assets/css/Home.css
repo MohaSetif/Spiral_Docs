@@ -228,3 +228,39 @@
     }
   }
   
+/* =================Console==================== */
+
+.console {
+  font-family: 'Fira Mono';
+  width: 700px;
+  height: 450px;
+  box-sizing: border-box;
+  border: 1px solid rgb(66, 58, 90);
+  border-radius: 15px;
+  margin: auto;
+}
+
+.console header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #211d35;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #DDD;
+}
+
+.console .consolebody {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow: scroll;
+  background-color: rgb(19, 15, 27);
+  color: #ffffff;
+}
+
+.console .consolebody p {
+  line-height: 1.5rem;
+}

@@ -53,6 +53,41 @@ export default function Body() {
           <h3>Laravel seamlessly integrates with PostgreSQL by configuring the .env file with the PostgreSQL connection details like DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD. Leveraging Laravel's migration system and eloquent ORM simplifies database setup and management, enabling smooth interaction between the application and PostgreSQL.</h3>
         </div>
       </div>
+      <div className="cmd">
+        <div className="cmd_left">
+
+        </div>
+        <div className="cmd_right">
+          <div className="console">
+            <header>
+              <p>guest@antoineneff</p>
+            </header>
+            <div className="consolebody">
+              <p>{`>`} npx create-spiral-app</p>
+              <pre className="ascii-art">
+                <code style={{ color: 'blue' }}>
+                  {` ____        _           _   ____  _             _`}
+                </code><br />
+                <code style={{ color: 'blue' }}>
+                  {`/ ___| _ __ (_)_ __ __ _| | / ___|| |_ __ _  ___| | __`}
+                </code><br />
+                <code style={{ color: '#2700c4' }}>
+                  {`\\___ \\| '_ \\| | '__/ _\` | | \\___ \\| __/ _\` |/ __| |/ /`}
+                </code><br />
+                <code style={{ color: 'purple' }}>
+                  {` ___) | |_) | | | | (_| | |  ___) | || (_| | (__|   < `}
+                </code><br />
+                <code style={{ color: '#c12dba' }}>
+                  {`|____/| .__/|_|_|  \\__,_|_| |____/ \\__\\__,_|\\___|_|\\_\\`}
+                </code><br />
+                <code style={{ color: 'pink' }}>
+                  {`      |_|`}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="cards">
           {cardsData.map((card, index) => (
               <Card
