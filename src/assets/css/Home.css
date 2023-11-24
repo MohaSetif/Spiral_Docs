@@ -264,3 +264,12 @@
 .console .consolebody p {
   line-height: 1.5rem;
 }
+
+.web_choice {
+  margin-left: 13px;
+}
+
+.active{
+  margin-left: 0px;
+  color: #6855d4;
+}

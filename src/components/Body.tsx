@@ -60,10 +60,10 @@ export default function Body() {
         <div className="cmd_right">
           <div className="console">
             <header>
-              <p>guest@antoineneff</p>
+              <p>owner@randomuser23</p>
             </header>
             <div className="consolebody">
-              <p>{`>`} npx create-spiral-app</p>
+              <p>npx @mohasetif/create-spiral-app</p>
               <pre className="ascii-art">
                 <code style={{ color: 'blue' }}>
                   {` ____        _           _   ____  _             _`}
@@ -84,6 +84,21 @@ export default function Body() {
                   {`      |_|`}
                 </code>
               </pre>
+              <p><b>{`?`} What project template would you like to generate?</b> (Use arrow keys)</p>
+              <div>
+                <p className='web_choice'>Laravel</p>
+                <p className='active'>{`>`} Laravel-React</p>
+                <p className='web_choice'>Laravel-Svelte</p>
+                <p className='web_choice'>Laravel-Sveltekit</p>
+                <p className='web_choice'>Laravel-Vue</p>
+                <p className='web_choice'>Sveltekit-Tailwind</p>
+              </div>
+              <p><b>{`?`} What project template would you like to generate? </b><p className="active">Laravel-React</p></p>
+              <p><b>Choose the variant for Laravel-React: </b></p>
+              <div>
+                <p className='active'>{`>`} Inertia</p>
+                <p className='web_choice'>Typescript</p>
+              </div>
             </div>
           </div>
         </div>
