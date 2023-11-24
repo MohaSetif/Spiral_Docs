@@ -1,5 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaravel, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { database } from './Postgre';
 import faSvelte from '../assets/images/pngaaa.com-4915832-removebg-preview.png'
 import Tailwind from '../assets/images/image-invert.png'
 import Postgres from '../assets/images/imgbin-computer-icons-postgresql-database-others-SKZhuzreHG59SpDwpJV6M0Yz6-removebg-preview.png'
@@ -37,6 +40,17 @@ export default function Body() {
               <div className="third_planet"><img src={faSvelte} /></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="configs">
+        <div className="code-block-container">
+          <SyntaxHighlighter className="code_block" language="php" style={atelierCaveDark}>
+            {database}
+          </SyntaxHighlighter>
+        </div>
+        <div className="conf_exp">
+          <h2>Code</h2>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatem asperiores provident incidunt nulla culpa ea at ipsa ut laborum sit accusamus architecto ad iusto rem veniam libero, temporibus corrupti.</h3>
         </div>
       </div>
       <div id="cards">

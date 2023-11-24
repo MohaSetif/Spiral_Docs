@@ -21,7 +21,7 @@ body{
 .Body_page h1{
     font-size: var(--main);
     font-weight: bolder;
-    line-height: 75px;
+    line-height: 90px;
 }
 
 .Body_page h4{
@@ -30,7 +30,7 @@ body{
 
 .Head{
     z-index: 2;
-    margin-top: 12%;
+    margin-top: 8%;
     margin-bottom: 12%;
     width: 81.3%;
     height: auto;
